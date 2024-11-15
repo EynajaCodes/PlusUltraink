@@ -1,0 +1,9 @@
+@import url(/assets/css/styles.css);
+
+#aboutbox{
+display:flex;
+float: center;
+
+
+background-color: lightslategrey;
+}

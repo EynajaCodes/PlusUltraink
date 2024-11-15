@@ -1,0 +1,1 @@
+﻿I’m learning how to be a front-end web developer. So, I decided to play around with some of the concepts i’m learning and make a faux AllMight fan site. I don’t own ALLMIGHT, or any MHA characters. I hope thios isn’t infringement.
