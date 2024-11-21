@@ -1,97 +1,73 @@
-@import url(/assets/css/aboutstyles.css);
-
-
-
-
-
-
-
-
-
-
-#navbar{ list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline;
-    
-
-
+body {
+  background-image: url("/assets/images/w77579qot1n11.jpg");
+  display: grid;
+  grid-auto-columns: 1fr 2fr (3fr, auto);
+  grid-auto-rows: 1fr 2fr (3fr, auto);
+  grid-template-areas:
+    "hd hd hd hd hd"
+    "sd sd main main main"
+    "sd sd main main main"
+    "sd sd main main main"
+    "ft ft ft ft ft";
 }
 
-li{float:left;position:top;
-display:block;
-padding: 8px;
-background-color: darkred;
-color:gold;
-
-
-
+header {
+  grid-area: hd;
+  text-align: center;
+  color: gold;
+  font-size: 56pt;
 }
 
-a{color:gold;
+#navbar {
+  position: absolute;
+  box-shadow: border-box;
+}
+#navbar a {
+  float: left;
+  color: gold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-body{
-
-    background-image: url("/assets/images/w77579qot1n11.jpg");
-    display:grid;
-    grid-auto-columns:1fr 2fr (3fr, auto);
-    grid-auto-rows: 1fr 2fr (3fr, auto) ;
-    grid-gap: 1rem;
-    grid-template-areas: 
-    'hd hd hd hd hd'
-    'sd sd main main main'
-    'sd sd main main main'
-    'sd sd main main main'
-    'ft ft ft ft ft';
-    
-
-
-
+#navbar a:hover {
+  color: darkred;
+  background-color: darkblue;
+  cursor: url("/assets/images/cursor.cur"), default;
 }
-
-header{ grid-area: hd;
-    text-align: center;
-color: gold;
-font-size: 56pt;}
-
-
-
+#navbar a.active {
+  background-color: gold;
+  color: black;
+}
 html {
-    cursor: url('/assets/images/cursor.cur'), default;
-    border: .2em dotted red
-  }
-
-.tweeps{ grid-area: main;
-    display: flex;
-    background-color: aliceblue;
-   
-
-
-
+  cursor: url("/assets/images/cursor.cur"), default;
+  border: 0.2em dotted red;
 }
 
-.tweeps.div{display:flex;
-    border: .1em dotted gold;
-
-
-
-
+.tweeps {
+  grid-area: main;
+  display: flex;
+  background-color: aliceblue;
 }
 
-.announcements{grid-area: sd;
-    background-color: aliceblue;
-    border: .2em dotted gold;
-
-
-
+.tweeps.div {
+  display: flex;
+  border: 0.1em dotted gold;
 }
 
-.announcements.img{
-display:flex;
-background-image: url(/assets/images/108-1083966_all-might-png-fire-emblem-arthur-all-might.png);
-content-fit: 10%;
-background-color: red;
-
+.announcements {
+  grid-area: sd;
+  background-color: aliceblue;
+  border: 0.2em dotted gold;
 }
 
+.announcements.img {
+  display: flex;
+  background-image: url(/assets/images/108-1083966_all-might-png-fire-emblem-arthur-all-might.png);
+  content-fit: 10%;
+  background-color: red;
+}
+
+#navbar.li {
+}
